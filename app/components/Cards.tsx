@@ -10,9 +10,9 @@ const Cards = () => {
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
     const cardStyles = {
-        card1: { image: card1, position: { x: 750, y: 1190 }, color: 'white' },
-        card2: { image: card2, position: { x: 1000, y: 1490 }, color: 'white' },
-        card3: { image: card3, position: { x: 1000, y: 1398 }, color: 'white' },
+        card1: { image: card1, position: { x: 750, y: 1160 }, color: '#15445A' },
+        card2: { image: card2, position: { x: 750, y: 1160 }, color: '#15445A' },
+        card3: { image: card3, position: { x: 750, y: 1050 }, color: 'white' },
     };
 
     const handleCardSelection = (cardKey: keyof typeof cardStyles) => {
@@ -71,7 +71,7 @@ const Cards = () => {
 
     return (
         <div>
-            <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full max-w-6xl mx-auto p-5">
+            <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 w-full max-w-6xl mx-auto p-5 text-center">
                 {Object.entries(cardStyles).map(([key, { image }]) => (
                     <div key={key}>
                         <Image
@@ -79,7 +79,7 @@ const Cards = () => {
                             alt={`بطاقة تهنئة ${key}`}
                             width={400}
                             height={300}
-                            className="object-cover w-full  rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300"
+                            className="object-cover w-full rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300"
                         />
                         <div className="my-4 text-right">
                             <button

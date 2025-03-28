@@ -16,7 +16,7 @@ export default function Home() {
       </div>
       <div className="bg-[#C1B48A] h-1.5"></div>
       <div className="p-5 bg-[#15445A]">
-        <p className="text-white text-center text-[10px] pb-6">
+        <p className="text-white text-center md:text-2xl text-[10px] pb-6 pt-3">
           اختر البطاقة التي تناسبك
         </p>
         <Cards />
