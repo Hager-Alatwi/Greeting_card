@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Helvetica Neue W23 for SKY Reg";
+  src: url("https://db.onlinewebfonts.com/t/2e6ae3642c879522873a28ede1eaac69.woff2") format("woff2"),
+       url("https://db.onlinewebfonts.com/t/2e6ae3642c879522873a28ede1eaac69.woff") format("woff"),
+       url("https://db.onlinewebfonts.com/t/2e6ae3642c879522873a28ede1eaac69.ttf") format("truetype");
+}
+
+body {
+  font-family: "Helvetica Neue W23 for SKY Reg", "Amiri", sans-serif;
+}
