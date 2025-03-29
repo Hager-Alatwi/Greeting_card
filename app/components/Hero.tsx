@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
+import { Background } from '@/public/bg'
 
 
 const Hero = () => {
@@ -14,7 +15,7 @@ const Hero = () => {
     return (
         <div>
             <div className='bg-gradient-to-r from-[#3D7EB9] via-[#0DA9A6] to-[#07A869]'>
-                <Image src="/background_02.jpg" alt="Eid Mubarak" width={300} height={300} className='object-cover h-screen w-full opacity-25' />
+                <Image src={Background} alt="Eid Mubarak" width={300} height={300} className='object-cover h-screen w-full opacity-25' />
                 <p className="text-white absolute md:top-[49%] top-[51%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center md:text-[20px] text-[10px]">
                     المتوسطة التاسعة والثلاثون تهنئكم بقدوم
                 </p>
